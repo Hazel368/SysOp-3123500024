@@ -15,6 +15,20 @@
   <h3 style="text-align: center;line-height: 1.5">Program Studi Teknik Informatika<br>Departemen Teknik Informatika Dan Komputer<br>Politeknik Elektronika Negeri Surabaya<br>2023/2024</h3>
   <hr>
 </div>
+
+## Daftar Isi
+
+1. [PPT](#ppt)
+2. [FLOPS dan IOPS](#flops-dan-iops)<br>
+   [Install gcc, make, dan git](#install-gcc-make-dan-git)<br>
+   [How to run FLOPS dan IOPS](#how-to-run-flops-dan-iops)<br>
+   [Tabel Pengujian](#tabel-pengujian)<br>
+   [Analisa](#analisa)
+3. [Referensi](#referensi)
+
+## PPT
+
+[Link PPT](https://www.canva.com/design/DAF_WiIYVxg/RGJFWfZrDohJ6Ga9WcEA3g/edit)
             
             
 <h2 align="center"> Iops Dan Flops</h2>
