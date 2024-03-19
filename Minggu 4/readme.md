@@ -1,5 +1,5 @@
 <div align="center">
-  <h1 style="font-weight: bold"> LAPORAN PRAKTIKUM III SISTEM OPERASI<br> Iops Dan Flops</h1>
+  <h1 style="font-weight: bold">Pratikum Operasi Input & Output Minggu 4</h1>
   <h4 style="text-align: center;">Dosen Pengampu : Dr. Ferry Astika Saputra, S.T., M.Sc.</h4>
 </div>
 <br />
