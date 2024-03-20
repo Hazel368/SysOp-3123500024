@@ -143,6 +143,7 @@
    <img src="img/2_5.png" alt="">
 
 6. Notasi >> (append)
+
    ```
    $ echo “kata pertama” > surat
    $ echo “kata kedua” >> surat
@@ -151,9 +152,11 @@
    $ echo “kata keempat” > surat
    $ cat surat
    ```
+
     <img src="img/2_6.png" alt="">
 
 7. Notasi here document (<<++ .... ++) digunakan sebagai pembatas input dari keyboard. Perhatikan bahwa tanda pembatas dapat digantikan dengan tanda apa saja, namun harus sama dan tanda penutup harus diberikan pada awal baris
+
    ```
    $ cat <<++
    Hallo, apa kabar?
@@ -166,12 +169,135 @@
    Ok!
    %%%
    ```
+
    <img src="img/2_7.png" alt="">
 
- 8. Notasi – (input keyboard) adalah representan input dari keyboard. Artinya menampilkan file 1, kemudian menampilkan input dari keyboard dan menampilkan file 2. Perhatikan bahwa notasi “-“ berarti menyelipkan input dari keyboard
-    ```
-    $ cat myfile.txt – surat
-    ```  
-    <img src="img/2_8.png" alt="">
+8. Notasi – (input keyboard) adalah representan input dari keyboard. Artinya menampilkan file 1, kemudian menampilkan input dari keyboard dan menampilkan file 2. Perhatikan bahwa notasi “-“ berarti menyelipkan input dari keyboard
+   ```
+   $ cat myfile.txt – surat
+   ```
+   <img src="img/2_8.png" alt="">
 
 ## Percobaan 3 : Pipa (pipeline)
+
+1. Operator pipa (|) digunakan untuk membuat eksekusi proses dengan melewati data langsung ke data lainnya.
+
+   ```
+   $ who
+   $ who | sort
+   $ who | sort –r
+   $ who > tmp
+   $ sort tmp
+   $ rm tmp
+   $ ls –l /etc | more
+   $ ls –l /etc | sort | more
+   ```
+
+   <img src="img/who.png" alt="">
+   <img src="img/who2.png" alt="">
+   <img src="img/who3.png" alt="">
+
+2. Untuk membelokkan standart output ke file, digunakan operator ">"
+
+   ```
+   $ echo hello
+   $ echo hello > output
+   $ cat output
+   ```
+
+   <img src="img/3_2.png" alt="">
+
+3. Untuk menambahkan output ke file digunakan operator ">>"
+
+   ```
+   $ echo bye >> output
+   $ cat output
+   ```
+
+   <img src="img/3_3.png" alt="">
+
+4. Untuk membelokkan standart input digunakan operator "<"
+   ```
+   $ cat < output
+   ```
+   <img src="img/3_4.png" alt="">
+
+5. Pembelokan standart input dan standart output dapat dikombinasikan tetapi tidak boleh menggunakan nama file yang sama sebagai standart input dan output.
+   ```
+   $ cat < output > out
+   $ cat out
+   $ cat < output >> out
+   $ cat out
+   $ cat < output > output
+   $ cat output
+   $ cat < out >> out (Proses tidak berhenti)
+   [Ctrl-c]
+   $ cat out
+   ```
+   <img src="img/3_5.png" alt="">
+
+## Percobaan 4 : Filter
+1. Pipa juga digunakan untuk mengkombinasikan utilitas sistem untuk membentuk fungsi yang lebih kompleks
+   ```
+    $ w –h | grep <user>
+    $ grep <user> /etc/passwd
+    $ ls /etc | wc
+    $ ls /etc | wc –l
+    $ cat > kelas1.txt
+    Badu
+    Zulkifli
+    Yulizir
+    Yudi
+    Ade
+    [Ctrl-d]
+    $ cat > kelas2.txt
+    Budi
+    Gama
+    Asep
+    Muchlis
+    [Ctrl-d]
+    $ cat kelas1.txt kelas2.txt | sort
+    $ cat kelas1.txt kelas2.txt > kelas.txt
+    $ cat kelas.txt | sort | uniq
+   ```
+
+      <img src="img/4.jpg" alt="">
+
+## LATIHAN:
+
+1. Lihat daftar secara lengkap pada direktori aktif, belokkan tampilan standard output   ke file baru.
+2. Lihat daftar secara lengkap pada direktori /etc/passwd, belokkan tampilan standard output ke file baru tanpa menghapus file baru sebelumnya.
+3. Urutkan file baru dengan cara membelokkan standard input.
+4. Urutkan file baru dengan cara membelokkan standard input dan standard output ke file baru.urut.
+5. Buatlah direktori latihan 2 sebanyak 2 kali dan belokkan standard error ke file rmdirerror.txt.
+6. Urutkan kalimat berikut :
+   ```
+   Jakarta
+   Bandung
+   Surabaya
+   Padang
+   Palembang
+   Lampung
+   ```
+  Dengan menggunakan notasi **here document (<@@@ ...@@@)** . [HINT](https://www.geeksforgeeks.org/how-to-use-here-document-in-bash-programming/)
+  
+
+7. Hitung jumlah baris, kata dan karakter dari file baru.urut dengan menggunakan filter dan tambahkan data tersebut ke file baru.
+8. Gunakan perintah di bawah ini dan perhatikan hasilnya.
+   ```
+    $ cat > hello.txt
+    dog cat
+    cat duck
+    dog chicken
+    chicken duck
+    chicken cat
+    dog duck
+    [Ctrl-d]
+    $ cat hello.txt | sort | uniq
+    $ cat hello.txt | grep “dog” | grep –v “cat”
+   ```
+## LAPORAN RESMI:
+
+1. Analisa hasil percobaan 1 sampai dengan 4, untuk setiap perintah jelaskan tampilannya.
+2. Kerjakan latihan diatas dan analisa hasilnya
+3. Berikan kesimpulan dari praktikum ini.
