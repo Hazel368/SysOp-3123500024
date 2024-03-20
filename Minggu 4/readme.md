@@ -66,6 +66,15 @@
    ```
 
    <img src="img/ps.png" alt="">
+   Analisis 
+    <br>
+    Ketika perintah ps digunakan tanpa opsi atau argumen apa pun, ini akan menampilkan daftar proses yang berjalan di shell saat ini.
+    <br>
+    - PID –> process ID. Biasanya, saat menjalankan perintah ps, informasi paling penting yang dicari pengguna adalah proses PID. Mengetahui PID memungkinkan Anda untuk menghentikan proses yang tidak berfungsi. <br>
+- TTY –> Nama terminal pengendali untuk proses. <br>
+- TIME –> Waktu CPU kumulatif dari proses, ditampilkan dalam menit dan detik.<br>
+- CMD – Nama perintah yang digunakan untuk memulai proses.<br>
+   
 
 2. Output ke layar (standar output), input dari keyboard (standard input)
 
@@ -79,6 +88,8 @@
    ```
 
    <img src="img/cat.png" alt="">
+   Analisis
+   
 
 3. Input nama direktori, output tidak ada (membuat direktori baru), bila terjadi error maka tampilan error pada layar (standard error)
 
