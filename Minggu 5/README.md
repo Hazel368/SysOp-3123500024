@@ -80,7 +80,160 @@ Jawablah pertanyaan-pertanyaan di bawah ini :
 
 6. Instruksi `ps -au`
 
-     <img src="img/ps-au.png" alt="">
+    <img src="img/ps-au.png" alt="">
+
+   <br>
+   Analisa :
+
+### Percobaan 2 : Menampilkan Hubungan Proses Parent dan Child
+
+1. Instruksi `ps -eH`
+
+   <img src="img/2_1.png" alt="">
+
+   <br>
+   Analisa :
+    
+    <br>
+
+2. Perintah `ps -e f`
+
+    <img src="img/2_2.png" alt="">
+
+   <br>
+   Analisa :
+
+   <br>
+
+3. Perintah ` pstree`
+
+    <img src="img/2_3.png" alt="">
 
     <br>
-    Analisa : 
+   Analisa :
+
+   <br>
+
+4. Perintah `pstree | grep mingetty`
+
+    <img src="img/2_4.png" alt="">
+
+    <br>
+   Analisa :
+
+   <br>
+
+5. Perintah `pstree –h`
+
+   <img src="img/2_5.png" alt="">
+
+   <br>
+   Analisa :
+
+   <br>
+
+### Percobaan 3 : Menampilkan Status Proses dengan Berbagai Format
+
+1. Perintah ` ps –e | more`
+
+   <img src="img/3_1.png" alt="">
+
+   <br>
+   Analisa :
+
+   <br>
+
+2. Perintah `ps ax | more`
+
+   <img src="img/3_2.png" alt="">
+
+   <br>
+   Analisa :
+
+   <br>
+
+3. Perintah `ps ef | more`
+
+    <img src="img/3_3.png" alt="">
+
+   <br>
+   Analisa :
+
+   <br>
+
+4. Perintah `ps –eo pid,cmd | more`
+
+     <img src="img/3_4.png" alt="">
+
+   <br>
+   Analisa :
+
+   <br>
+
+5. Perintah `ps –eo pid,ppid,%mem,cmd | more`
+
+   <img src="img/3_5.png" alt="">
+
+   <br>
+   Analisa :
+
+   <br>
+
+### Percobaan 4 : Mengontrol proses pada shell
+
+1. Perintah `yes`
+
+   <img src="img/yes.png" alt="">
+   <br>
+   <img src="img/4_1.png" alt="">
+
+   <br>
+   Analisa :
+
+   <br>
+
+2. Perintah `yes > /dev/null`
+
+    <img src="img/4_2.png" alt="">
+
+    <br>
+   Analisa :
+
+   <br>
+
+3. Perintah ` yes > /dev/null &`
+
+   <img src="img/4_3.png" alt="">
+
+   <br>
+   Analisa :
+
+   <br>
+
+4. Perintah `jobs`
+
+    <img src="img/4_4.png" alt="">
+
+   <br>
+   Analisa :
+
+   <br>
+5. Perintah `kill %(nomor job) contoh : kill %1`
+
+    <img src="img/4_5.png" alt="">
+
+   <br>
+   Analisa :
+
+   <br>  
+6. Perintah `jobs`
+    
+    <img src="img/4_6.png" alt="">
+
+   <br>
+   Analisa :
+
+   <br>  
+
+
+
