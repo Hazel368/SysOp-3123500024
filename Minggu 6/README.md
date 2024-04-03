@@ -239,7 +239,6 @@ Sistem Operasi Minggu 6</h1>
    - Jalankan `sleep 60` pada background 5 kali dan terminasi semua pada dengan menggunakan perintah `killall`.
 
       <img src="img/3_7.png" alt="">
-      
       <img src="img/3_71.png" alt="">
 
 
