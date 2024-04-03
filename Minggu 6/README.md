@@ -219,7 +219,7 @@ Sistem Operasi Minggu 6</h1>
       <img src="img/3_2.png" alt="">
 
    - Jalankan perintah pada background menggunakan `&`
-       <img src="img/3_3.png" alt="">
+     <img src="img/3_3.png" alt="">
 
    - Jalankan `sleep 15` pada foreground, hentikan sementara dengan Ctrl-Z dan kemudian letakkan pada background dengan `bg`. Ketikkan `jobs`. Ketikkan `ps`. Kembalikan job ke foreground dengan perintah `fg`.
 
@@ -242,11 +242,10 @@ Sistem Operasi Minggu 6</h1>
    - Gunakan perintah `ps`, `w` dan `top` untuk menunjukkan semua proses yang sedang dieksekusi.
           <img src="img/3_8.png" alt="">
           
-          <img src="img/3_81.png" alt="">
+      <img src="img/3_81.png" alt="">
 
 
-   - Gunakan perintah `ps –aeH` untuk menampilkan hierarki proses. Carilah init proses. Apakah Anda bisa identifikasi sistem daemon yang penting ? Dapatkan Anda     
-     identifikasi shell dan subproses ?
+   - Gunakan perintah `ps –aeH` untuk menampilkan hierarki proses. Carilah init proses. Apakah Anda bisa identifikasi sistem daemon yang penting ? Dapatkan Anda identifikasi shell dan subproses ?
          <img src="img/3_9.png" alt="">
 
 
