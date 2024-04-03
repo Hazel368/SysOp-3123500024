@@ -188,25 +188,32 @@ Sistem Operasi Minggu 6</h1>
 2. Cobalah format tampilan ps dengan opsi berikut dan perhatikan hasil tampilannya :
 
    - `-f` daftar penuh
-     <img src="img/2_1.png" alt="">
+
+      <img src="img/2_1.png" alt="">
 
    - `-j` format job
-     <img src="img/2_2.png" alt="">
+
+       <img src="img/2_2.png" alt="">
 
    - `j` format job control
-     <img src="img/2_3.png" alt="">
+
+       <img src="img/2_3.png" alt="">
 
    - `l` daftar memanjang
-     <img src="img/2_4.png" alt="">
+
+       <img src="img/2_4.png" alt="">
 
    - `s` format sinyal
-     <img src="img/2_5.png" alt="">
+
+       <img src="img/2_5.png" alt="">
 
    - `v` format virtual memory
-     <img src="img/2_6.png" alt="">
+
+       <img src="img/2_6.png" alt="">
 
    - `X` format register i386
-     <img src="img/2_7.png" alt="">
+
+       <img src="img/2_7.png" alt="">
 
 3. Lakukan urutan pekerjaan berikut :
 
