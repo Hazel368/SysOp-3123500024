@@ -98,12 +98,13 @@ Sistem Operasi Minggu 6</h1>
 3. Pada setiap terminal, ketik `PS1 = ” \w:”` diikuti Enter. `\w` menampilkan path pada direktori home.
 
    <img src="img/6_2.png" alt="">
- 
+
     <br>
+
 4. Karena login sebagai root, maka akan ditampilkan `~:` pada setiap terminal. Untuk setiap terminal ketik `pwd` dan tekan Enter untuk melihat bahwa Anda sedang berada pada direktori `/root`.
 
-    <img src="img/6_3.png" alt="">
-  
+<img src="img/6_3.png" alt="">
+
   <br>
 5. Buka terminal lagi (keempat), atur posisi sehingga keempat terminal terlihat pada screen
 
@@ -111,6 +112,60 @@ Sistem Operasi Minggu 6</h1>
   
   <br>
 
-6. Pada terminal keempat, ketik `top` dan tekan *Enter*. Maka program `top` akan muncul. Ketik `i`. Top akan menampilkan proses yang aktif. Ketik `lmt`. `Top` tidak lagi menampilkan informasi pada bagian atas dari screen. Pada percobaan ini, terminal ke empat sebagai jendela `Top`.
+6. Pada terminal keempat, ketik `top` dan tekan _Enter_. Maka program `top` akan muncul. Ketik `i`. Top akan menampilkan proses yang aktif. Ketik `lmt`. `Top` tidak lagi menampilkan informasi pada bagian atas dari screen. Pada percobaan ini, terminal ke empat sebagai jendela `Top`.
+
+  <img src="img/6_5.png" alt="">
+
+  <br>
+      <img src="img/6_51.png" alt="">
+  
+  <br>
+      <img src="img/6_52.png" alt="">
+
+7. Pada terminal 1, bukalah program executable C++ dengan mengetik program `yes` dan tekan _enter_.
+8. Ulangi langkah 7 untuk terminal 2
+
+<img src="img/6_6.png" alt="">
+
+9. Jendela Top akan menampilkan dua program `yes` sebagai proses yang berjalan. Nilai `%CPU` sama pada keduanya. Hal ini berarti kedua proses mengkonsumsi waktu proses yang sama dan berjalan sama cepat. _PID_ dari kedua proses akan berbeda, misalnya pada contoh di atas adalah 2835 dan 2837. Kemudian gunakan terminal 3 (yang tidak menjalankan primes maupun Jendela Top) dan ketik _renice 19 2835_ dan diikuti Enter. Hal ini berarti mengganti penjadwalan prioritas dari proses ke 19.
+
+ <img src="img/6_7.png" alt="">
+
+10. Tunggu beberapa saat sampai program top berubah dan terlihat pada jendela `Top`. Pada kolom `STAT` memperlihatkan `N` untuk proses 2835. Hal ini berarti bahwa penjadwalan prioritas untuk proses 2835 lebih besar (lebih lambat) dari 0. Proses 2837 berjalan lebih cepat.
+
+      <img src="img/6_8.png" alt="">
+
+11. Program _top_ juga mempunyai fungsi yang sama dengan program `renice`. Pilih Jendela _Top_ dan tekan `r`. Program top terdapat prompt PID to renice: tekan 2835 dan tekan Enter. Program top memberikan prompt Renice PID 3148 to value: tekan -19 dan tekan Enter.
+
+       <img src="img/6_9.png" alt="">
+        
+      <br>
+      <img src="img/6_91.png" alt="">
+
+12. Tunggu beberapa saat sampai top berubah dan lihat nilai %CPU pada kedua proses. Sekarang proses 2835 lebih cepat dari proses 2837. Kolom status menunjukkan < pada proses 3148 yang menunjukkan penjadwalan prioritas lebih rendah (lebih cepat) dari nilai 0
+
+       <img src="img/6_9.png" alt="">
+
+13. Pilih terminal 3 (yang sedang tidak menjalankan yes atau program top) dan ketik nice –n -10 yes dan tekan Enter. Tunggu beberapa saat agar program top berubah dan akan terlihat proses primes ketiga. Misalnya PID nya 2845. Opsi -10 berada pada kolom NI (penjadwalan prioritas).
+
+       <img src="img/6_11.png" alt="">
+
+14. Jangan menggunakan mouse dan keyboard selama 10 detik. Program top menampilkan proses yang aktif selain program yes. Maka akan terlihat proses top terdaftar tetapi %CPU kecil (dibawah 1.0) dan konsisten. Juga terlihat proses berhubungan dengan dekstop grafis seperti X, panel dll.
+
+       <img src="img/6_12.png" alt="">
+
+15. Pindahkan mouse sehingga kursor berubah pada screen dan lihat apa yang terjadi dengan tampilan top. Proses tambahan akan muncul dan nilai %CPU berubah sebagai bagian grafis yang bekerja. Satu alasan adalah bahwa proses 2834 berjalan pada penjadwalan prioritas tinggi. Pilih jendela Top, ketik `r`. `PID to renice :` muncul prompt. Ketik 2834 dan tekan Enter. `Renice PID 2834 to value:` muncul prompt. Ketik 0 dan tekan Enter. Sekarang pindahkan mouse ke sekeliling screen. Lihat perubahannya
+
+       <img src="img/6_13.png" alt="">
+
+       <br>
+       <img src="img/6_131.png" alt="">
+       
+       <br>
+       <img src="img/6_132.png" alt="">
+
+16. Tutup semua terminal window.
+
+17. Logout dan login kembali sebagai user.
 
 
