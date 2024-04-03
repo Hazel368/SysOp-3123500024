@@ -227,7 +227,8 @@ Sistem Operasi Minggu 6</h1>
        <img src="img/3_4.png" alt="">
 
    - Jalankan `sleep 15` pada background menggunakan `&` dan kemudian gunakan perintah `kill` untuk menghentikan proses diikuti job number.
-      <img src="img/3_5.png" alt="">
+
+     <img src="img/3_5.png" alt="">
 
 
    - Jalankan `sleep 15` pada background menggunakan `&` dan kemudian gunakan `kill` untuk menghentikan sementara proses. Gunakan `bg` untuk melanjutkan menjalankan proses.
@@ -255,7 +256,8 @@ Sistem Operasi Minggu 6</h1>
 
 
    - Jalankan proses `sleep 300` pada background. Log off komputer dan log in kembali. Lihat daftar semua proses yang berjalan. Apa yang terjadi pada proses sleep ?
-          <img src="img/3_11.png" alt="">
+
+     <img src="img/3_11.png" alt="">
 
 
 
