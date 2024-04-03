@@ -232,27 +232,32 @@ Sistem Operasi Minggu 6</h1>
 
 
    - Jalankan `sleep 15` pada background menggunakan `&` dan kemudian gunakan `kill` untuk menghentikan sementara proses. Gunakan `bg` untuk melanjutkan menjalankan proses.
-      <img src="img/3_6.png" alt="">
+
+     <img src="img/3_6.png" alt="">
 
 
    - Jalankan `sleep 60` pada background 5 kali dan terminasi semua pada dengan menggunakan perintah `killall`.
+
       <img src="img/3_7.png" alt="">
       
       <img src="img/3_71.png" alt="">
 
 
    - Gunakan perintah `ps`, `w` dan `top` untuk menunjukkan semua proses yang sedang dieksekusi.
-          <img src="img/3_8.png" alt="">
+
+      <img src="img/3_8.png" alt="">
           
       <img src="img/3_81.png" alt="">
 
 
    - Gunakan perintah `ps –aeH` untuk menampilkan hierarki proses. Carilah init proses. Apakah Anda bisa identifikasi sistem daemon yang penting ? Dapatkan Anda identifikasi shell dan subproses ?
-         <img src="img/3_9.png" alt="">
+
+     <img src="img/3_9.png" alt="">
 
 
    - Kombinasikan `ps –fae` dan grep, apa yang Anda lihat ?
-          <img src="img/3_10.png" alt="">
+
+     <img src="img/3_10.png" alt="">
 
 
    - Jalankan proses `sleep 300` pada background. Log off komputer dan log in kembali. Lihat daftar semua proses yang berjalan. Apa yang terjadi pada proses sleep ?
