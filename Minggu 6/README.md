@@ -168,4 +168,96 @@ Sistem Operasi Minggu 6</h1>
 
 17. Logout dan login kembali sebagai user.
 
+### Latihan : Cobalah format tampilan ps dengan opsi berikut dan perhatikan hasil tampilannya
+
+1. Masuk ke tty2 dengan _Ctrl+Alt+F2_. Ketik `ps –au` dan tekan Enter. Kemudian perhatikan keluaran sebagai berikut :
+
+   - Sebutkan nama-nama proses yang bukan root
+   - Tulis PID dan COMMAND dari proses yang paling banyak menggunakan CPU time
+   - Sebutkan buyut proses dan PID dari proses tersebut
+   - Sebutkan beberapa proses daemon
+   - Pada prompt login lakukan hal- hal sebagai berikut :
+     `$ csh`
+     `$ who`
+     `$ bash`
+     `$ ls`
+     `$ sh`
+     `$ ps`
+   - Sebutkan PID yang paling besar dan kemudian buat urut-urutan proses sampai ke PPID = 1.
+
+2. Cobalah format tampilan ps dengan opsi berikut dan perhatikan hasil tampilannya :
+
+   - `-f` daftar penuh
+     <img src="img/2_1.png" alt="">
+
+   - `-j` format job
+     <img src="img/2_2.png" alt="">
+
+   - `j` format job control
+     <img src="img/2_3.png" alt="">
+
+   - `l` daftar memanjang
+     <img src="img/2_4.png" alt="">
+
+   - `s` format sinyal
+     <img src="img/2_5.png" alt="">
+
+   - `v` format virtual memory
+     <img src="img/2_6.png" alt="">
+
+   - `X` format register i386
+     <img src="img/2_7.png" alt="">
+
+3. Lakukan urutan pekerjaan berikut :
+
+   - Gunakan perintah `find` ke seluruh direktory pada sistem, belokkan output sehingga daftar direktori dialihkan ke file `directories.txt` dan daftar pesan error dialihkan ke file `errors.txt`
+
+      <img src="img/3_1.png" alt="">
+
+   - Gunakan perintah `sleep 5`. Apa yang terjadi dengan perintah ini ?
+
+      <img src="img/3_2.png" alt="">
+
+   - Jalankan perintah pada background menggunakan `&`
+     <img src="img/3_3.png" alt="">
+
+   - Jalankan `sleep 15` pada foreground, hentikan sementara dengan Ctrl-Z dan kemudian letakkan pada background dengan `bg`. Ketikkan `jobs`. Ketikkan `ps`. Kembalikan job ke foreground dengan perintah `fg`.
+
+       <img src="img/3_4.png" alt="">
+
+   - Jalankan `sleep 15` pada background menggunakan `&` dan kemudian gunakan perintah `kill` untuk menghentikan proses diikuti job number.
+      <img src="img/3_5.png" alt="">
+
+
+   - Jalankan `sleep 15` pada background menggunakan `&` dan kemudian gunakan `kill` untuk menghentikan sementara proses. Gunakan `bg` untuk melanjutkan menjalankan proses.
+      <img src="img/3_6.png" alt="">
+
+
+   - Jalankan `sleep 60` pada background 5 kali dan terminasi semua pada dengan menggunakan perintah `killall`.
+      <img src="img/3_7.png" alt="">
+      
+      <img src="img/3_71.png" alt="">
+
+
+   - Gunakan perintah `ps`, `w` dan `top` untuk menunjukkan semua proses yang sedang dieksekusi.
+          <img src="img/3_8.png" alt="">
+          
+      <img src="img/3_81.png" alt="">
+
+
+   - Gunakan perintah `ps –aeH` untuk menampilkan hierarki proses. Carilah init proses. Apakah Anda bisa identifikasi sistem daemon yang penting ? Dapatkan Anda identifikasi shell dan subproses ?
+         <img src="img/3_9.png" alt="">
+
+
+   - Kombinasikan `ps –fae` dan grep, apa yang Anda lihat ?
+          <img src="img/3_10.png" alt="">
+
+
+   - Jalankan proses `sleep 300` pada background. Log off komputer dan log in kembali. Lihat daftar semua proses yang berjalan. Apa yang terjadi pada proses sleep ?
+          <img src="img/3_11.png" alt="">
+
+
+
+
+
 
