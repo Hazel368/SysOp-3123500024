@@ -219,7 +219,8 @@ Sistem Operasi Minggu 6</h1>
       <img src="img/3_2.png" alt="">
 
    - Jalankan perintah pada background menggunakan `&`
-     <img src="img/3_3.png" alt="">
+
+      <img src="img/3_3.png" alt="">
 
    - Jalankan `sleep 15` pada foreground, hentikan sementara dengan Ctrl-Z dan kemudian letakkan pada background dengan `bg`. Ketikkan `jobs`. Ketikkan `ps`. Kembalikan job ke foreground dengan perintah `fg`.
 
