@@ -285,5 +285,15 @@ Sistem Operasi Minggu 6</h1>
 
 
    - Jalankan proses `sleep 300` pada background. Log off komputer dan log in kembali. Lihat daftar semua proses yang berjalan. Apa yang terjadi pada proses sleep ?
+<<<<<<< HEAD
+=======
+
+     <img src="img/3_11.png" alt="">
+
+
+
+
+
+>>>>>>> 11c1a15ff575842c8d0eafe930db720ba7569107
 
      <img src="img/3_11.png" alt="">
