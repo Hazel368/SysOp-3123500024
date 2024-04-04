@@ -27,7 +27,9 @@ Sistem Operasi Minggu 6</h1>
     <img src="img/5_1.png" alt="">
 
    <br>
-   Analisa :
+   Analisa : 
+       Cara lain meletakkan job pada background dengan memulai job secara normal (pada foreground), stop job dan memulai lagi pada background. Gunakan perintah `yes > /dev/null` untuk memulai job baru. Hentikan sementara job (suspend), bukan menghentikannya (terminate), tetapi menghentikan sementara job sampai di restart. Untuk menghentikan sementara job gunakan *Ctrl + Z*
+
 
    <br>
 
@@ -37,6 +39,7 @@ Sistem Operasi Minggu 6</h1>
 
    <br>
    Analisa :
+        Perintah `fg` disini digunakan untuk me-restart job pada *foreground*.
 
    <br>
 
@@ -45,7 +48,9 @@ Sistem Operasi Minggu 6</h1>
     <img src="img/5_3.png" alt="">
 
    <br>
-   Analisa :
+   Analisa :     
+   Setelah instruksi `fg`, Shell akan menampilkan nama perintah yang diletakkan di *foreground*. Stop job lagi dengan *Ctrl    + Z*. Kemudian gunakan perintah `bg` untuk meletakkan job pada *background*. 
+
 
    <br>
 
@@ -55,6 +60,8 @@ Sistem Operasi Minggu 6</h1>
 
    <br>
    Analisa :
+       Job pada *background* dapat digunakan untuk menampilkan teks pada terminal, dimana dapat diabaikan jika mencoba mengerjakan job lain seperti perintah di atas. Untuk menghentikannya tidak dapat menggunakan *Ctrl + C*. Job harus dipindah ke *foreground* baru diberhentikan dengan cara tekan `fg` dan tekan enter, Kemudian lanjutkan dengan *Ctrl + Z* untuk menghentikan sementara
+
 
    <br>
 
@@ -64,6 +71,8 @@ Sistem Operasi Minggu 6</h1>
 
    <br>
    Analisa :
+  Perintah di atas digumakan apabila ingin menjalankan banyak job dalam satu waktu, letakkan job pada *foreground* atau *background* dengan memberikan job ID. 
+
 
    <br>
 
@@ -73,6 +82,8 @@ Sistem Operasi Minggu 6</h1>
 
    <br>
    Analisa :
+       tekan `fg` dan tekan *Enter*, kemudian dilanjutkan dengan *Ctrl-Z* untuk menghentikan sementara
+
 
    <br>
 
@@ -82,6 +93,8 @@ Sistem Operasi Minggu 6</h1>
 
    <br>
    Analisa :
+      Lihat job dengan perintah `ps -fae` dan tekan Enter. Kemudian hentikan proses dengan perintah kill. Pada proses di atas proses yang dihentikan adalah proses dengan PID 6142, yaitu proses `yes > /dev/null`
+
 
    <br>
 
