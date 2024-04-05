@@ -71,7 +71,11 @@ Sistem Operasi Minggu 6</h1>
 
    <br>
    Analisa :
+<<<<<<< HEAD
   Perintah di atas digunakan apabila ingin menjalankan banyak job dalam satu waktu, letakkan job pada *foreground* atau *background* dengan memberikan job ID. 
+=======
+  Perintah di atas digumakan apabila ingin menjalankan banyak job dalam satu waktu, letakkan job pada *foreground* atau *background* dengan memberikan job ID. 
+>>>>>>> 71b2357829b389f8e40a16891b10cc131812e315
 
 
    <br>
@@ -308,9 +312,12 @@ Proses merupakan program yang sedang dieksekusi oleh CPU dimana statusnya kita b
 
 
 
+<<<<<<< HEAD
 
 
 
 
 
      
+=======
+>>>>>>> 71b2357829b389f8e40a16891b10cc131812e315
