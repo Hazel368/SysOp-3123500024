@@ -110,7 +110,7 @@ Sistem Operasi Minggu 6</h1>
 
 3. Pada setiap terminal, ketik `PS1 = ” \w:”` diikuti Enter. `\w` menampilkan path pada direktori home.
 
-   <img src="img/6_2.png"  alt="">
+   <img src="img/6_2.png" alt="">
 
     <br>
 
@@ -545,4 +545,3 @@ Proses merupakan program yang sedang dieksekusi oleh CPU dimana statusnya kita b
 
 
      
-
