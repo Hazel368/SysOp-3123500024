@@ -1993,7 +1993,7 @@ Output:
 
 ### Kesimpulan
 
-`seq` lebih baik dib
+`seq` lebih baik dibandingkan dengan loop for dan while
 
 
 
