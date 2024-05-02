@@ -68,6 +68,17 @@ Jika menggunakan UEFI + sistem partisi GPT maka kamu lebih mudah mengelola bootl
 
 Jadi, meskipun Legacy Mode masih digunakan, UEFI merupakan teknologi yang lebih inovatif dan ramah pengguna. UEFI dapat diandalkan untuk mem-boot sistem dengan kecepatan boot yang lebih cepat dan kapasitas booting yang lebih besar.
 
+
+# Flowchart Legacy & UEFI
+
+<br>
+
+  <img src="img/flow.png" alt="">
+
+<br>
+
+
+
 # Daftar Pustaka
 - https://blog.dimensidata.com/pengertian-dan-perbedaan-uefi-dan-legacy-pada-bios/
 - https://www.localstartupfest.id/faq/perbedaan-uefi-dan-legacy/
