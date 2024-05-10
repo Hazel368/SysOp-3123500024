@@ -28,7 +28,7 @@
 ### Apa itu Sistem operasi dan Debian 12?
 **Sistem operasi** adalah perangkat lunak sistem yang digunakan untuk mengontrol dan mengelola perangkat keras dan operasi sistem dasar, termasuk menjalankan perangkat lunak aplikasi seperti pengolah kata dan browser web.
 Sistem operasi adalah salah satu dari empat komponen utama komputer.Sistem operasi adalah koneksi antara komputer Anda (brainware) dan perangkat keras (hardware) yang memungkinkan Anda menggunakan komputer dengan lebih nyaman.
-Hal ini dimaksudkan untuk itu.
+Hal ini dimaksudkan untuk itu
 Sistem komputer Anda akan digunakan lebih efisien.
 Sebagai penghubung antara pengguna komputer dan perangkat keras,  sistem operasi memegang peranan yang sangat penting. Oleh karena itu, sistem operasi yang baik akan memaksimalkan kenyamanan pengguna dan pekerjaan komputer.
 Oleh karena itu, perusahaan-perusahaan besar yang menerapkan sistem informasi untuk menjalankan bisnisnya sangat bergantung pada sistem operasi yang andal untuk mendukung operasionalnya.
